@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Box } from "theme-ui"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
@@ -8,28 +8,28 @@ const Header = ({ siteTitle }) => (
     sx={{
       backgroundColor: "primary",
       color: "background",
-      mb: "1.45rem",
     }}
   >
-    <div
+    <Box
       sx={{
         m: "0 auto",
         p: "1.45rem 1.0875rem",
         maxWidth: "960px",
       }}
     >
-      <h1 sx={{ margin: 0 }}>
-        <Link
-          to="/"
-          sx={{
-            color: "background",
-            textDecoration: "none",
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+      <Link
+        to="/"
+        sx={{
+          fontFamily: "heading",
+          fontWeight: "heading",
+          fontSize: 40,
+          color: "background",
+          textDecoration: "none",
+        }}
+      >
+        {siteTitle}
+      </Link>
+    </Box>
   </header>
 )
 

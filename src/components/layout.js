@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Fragment } from "react"
-import { jsx } from "theme-ui"
+import { jsx, Main, Container, Footer } from "theme-ui"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -20,22 +20,15 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        sx={{
-          m: `0 auto`,
-          maxWidth: 960,
-          p: `0px 1.0875rem 1.45rem`,
-          pt: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          {`© ${new Date().getFullYear()}, Built with `}
-          <a sx={{ color: "primary" }} href="https://www.gatsbyjs.org">
-            Gatsby
-          </a>
-        </footer>
-      </div>
+      <Main>
+        <Container>{children}</Container>
+      </Main>
+      <Footer sx={{ bg: "mute", p: 4 }}>
+        {`© ${new Date().getFullYear()}, Built with`}
+        <a sx={{ color: "primary", ml: 1 }} href="https://www.gatsbyjs.org">
+          Gatsby
+        </a>
+      </Footer>
     </Fragment>
   )
 }
