@@ -3,7 +3,6 @@ import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -11,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>
-      Welcome to your new <strong>strong Gatsby site.</strong>
+      Welcome to your new, <strong>strong Gatsby site.</strong>
     </p>
     <p>
       <i>Now go build something italic.</i>
@@ -23,9 +22,6 @@ const IndexPage = () => (
       mollitia numquam, tempora perferendis fuga? Quaerat, incidunt! Molestiae a
       aperiam laborum consequuntur?
     </p>
-    <div sx={{ maxWidth: `300px`, mb: `1.45rem` }}>
-      <Image />
-    </div>
     <Link sx={{ color: "primary" }} to="/page-2/">
       Go to page 2
     </Link>

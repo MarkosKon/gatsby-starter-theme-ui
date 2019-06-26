@@ -5,4 +5,14 @@ export default {
   secondary: "orangered",
   accent: "pink",
   mute: "lightgray",
+  modes: {
+    dark: {
+      text: "#fff",
+      background: "#000",
+      primary: "rebeccapurple",
+      secondary: "orangered",
+      accent: "pink",
+      mute: "darkgray",
+    },
+  },
 }
