@@ -36,8 +36,7 @@ export const wrapRootElement = ({ element }) => (
             It doesn't work everytime for some reason.
           */
           .color-transition {
-            transition: background-color 2s ease-in, color 2s ease-in;
-            /* transition: background-color 0.15s ease-in, color 0.15s ease-in; */
+            transition: background-color 0.15s ease-in, color 0.15s ease-in;
           }
         `}
       />
