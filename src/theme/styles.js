@@ -1,3 +1,5 @@
+// All options: https://theme-ui.com/theme-spec#styles
+
 const heading = {
   fontFamily: "heading",
   lineHeight: "heading",
