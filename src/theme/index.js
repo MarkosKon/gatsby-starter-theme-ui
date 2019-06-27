@@ -1,6 +1,7 @@
 import colors from "./colors"
 import fonts from "./fonts"
 import styles from "./styles"
+import { textStyles } from "./variants"
 
 export default {
   fonts,
@@ -22,4 +23,5 @@ export default {
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   styles,
+  textStyles,
 }
