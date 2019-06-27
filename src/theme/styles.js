@@ -8,8 +8,8 @@ export default {
   // mdx
   h1: {
     ...heading,
-    color: "primary",
-    fontSize: 32,
+    color: "text",
+    fontSize: 40,
     mt: 4,
     mb: 2,
   },
