@@ -5,9 +5,8 @@ export { wrapRootElement } from "./src/rootElement"
 const noflash = `
 (function() {
   try {
-    var mode = localStorage.getItem('theme-ui-color-mode');
-    if (!mode) return
-    document.body.classList.add('theme-ui-' + mode);
+    var mode = localStorage.getItem('theme-ui-color-mode') || "light";
+    document.body.classList.add(mode);
   } catch (e) {
   }
 })();

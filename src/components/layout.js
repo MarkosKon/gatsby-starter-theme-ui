@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
     }
   `)
   const [colorMode, setColorMode] = useColorMode()
+  const newColorMode = colorMode === "light" ? "dark" : "light"
   return (
     <Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -31,10 +32,12 @@ const Layout = ({ children }) => {
             py: 2,
           }}
           onClick={e => {
-            setColorMode(colorMode === "light" ? "dark" : "light")
+            document.body.classList.remove(colorMode)
+            document.body.classList.add(newColorMode)
+            setColorMode(newColorMode)
           }}
         >
-          Toggle {colorMode === "light" ? "Dark" : "Light"}
+          Toggle {newColorMode}
         </button>
       </Box>
       <Main sx={{ minHeight: "76vh" }}>

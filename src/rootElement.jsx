@@ -5,7 +5,7 @@ import { Global, css } from "@emotion/core"
 import theme from "./theme"
 
 import "typeface-oswald"
-import "typeface-open-sans"
+import "typeface-lora"
 import "normalize.css"
 
 export const wrapRootElement = ({ element }) => (
@@ -26,17 +26,25 @@ export const wrapRootElement = ({ element }) => (
             font-family: "Oswald", sans-serif;
           }
           body {
-            font-family: "Open Sans", sans-serif;
+            font-family: "Lora", sans-serif;
             font-size: 20px;
-            line-height: 1.4;
+            line-height: 1.45;
           }
-          /*  
-            This makes the flash of the dark mode seem nices.
-            To use it add this class to an element.
-            It doesn't work everytime for some reason.
-          */
-          .color-transition {
-            transition: background-color 0.15s ease-in, color 0.15s ease-in;
+          body.light {
+            --text: #000;
+            --background: #fff;
+            --primary: rebeccapurple;
+            --secondary: orangered;
+            --accent: pink;
+            --mute: lightgray;
+          }
+          body.dark {
+            --text: #fff;
+            --background: #000;
+            --primary: #9a2463;
+            --secondary: orangered;
+            --accent: pink;
+            --mute: darkgray;
           }
         `}
       />

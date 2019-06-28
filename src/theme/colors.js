@@ -1,18 +1,16 @@
+const variables = {
+  text: "var(--text)",
+  background: "var(--background)",
+  primary: "var(--primary)",
+  secondary: "var(--secondary)",
+  accent: "var(--accent)",
+  mute: "var(--mute)",
+}
 export default {
-  text: "#000",
-  background: "#fff",
-  primary: "rebeccapurple",
-  secondary: "orangered",
-  accent: "pink",
-  mute: "lightgray",
+  ...variables,
   modes: {
     dark: {
-      text: "#fff",
-      background: "#000",
-      primary: "rebeccapurple",
-      secondary: "orangered",
-      accent: "pink",
-      mute: "darkgray",
+      ...variables,
     },
   },
 }
