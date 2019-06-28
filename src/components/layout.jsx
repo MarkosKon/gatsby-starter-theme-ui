@@ -30,6 +30,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <Box sx={{ py: 3, px: [2, 3], textAlign: "right" }}>
         <button
+          type="button"
           sx={{
             bg: "secondary",
             color: "text",
@@ -37,13 +38,13 @@ const Layout = ({ children }) => {
             px: 3,
             py: 2,
           }}
-          onClick={e => {
+          onClick={() => {
             document.body.classList.remove(colorMode)
             document.body.classList.add(newColorMode)
             setColorMode(newColorMode)
           }}
         >
-          Toggle {newColorMode}
+          {`Toggle ${newColorMode}`}
         </button>
       </Box>
       <Main sx={{ minHeight: "76vh" }}>

@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Styled.h1>Hi people</Styled.h1>
     <p>
-      Welcome to your new, <strong>strong Gatsby site.</strong>
+      Welcome to your new, <strong> strong Gatsby site.</strong>
     </p>
     <p>
       <i>Now go build something italic.</i>

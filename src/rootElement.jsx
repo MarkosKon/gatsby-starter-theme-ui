@@ -8,6 +8,7 @@ import "typeface-oswald"
 import "typeface-lora"
 import "normalize.css"
 
+// eslint-disable-next-line react/prop-types
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={theme}>
     <>
