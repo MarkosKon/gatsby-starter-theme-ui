@@ -1,6 +1,13 @@
 /** @jsx jsx */
-import { Fragment } from "react"
-import { jsx, Main, Box, Container, Footer, useColorMode } from "theme-ui"
+import {
+  jsx,
+  Main,
+  Box,
+  Container,
+  Footer,
+  useColorMode,
+  Styled,
+} from "theme-ui"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -19,7 +26,7 @@ const Layout = ({ children }) => {
   const [colorMode, setColorMode] = useColorMode()
   const newColorMode = colorMode === "light" ? "dark" : "light"
   return (
-    <Fragment>
+    <Styled.root>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Box sx={{ py: 3, px: [2, 3], textAlign: "right" }}>
         <button
@@ -44,11 +51,14 @@ const Layout = ({ children }) => {
       </Main>
       <Footer sx={{ p: 4 }}>
         {`© ${new Date().getFullYear()}, Built with`}
-        <a sx={{ color: "primary", ml: 1 }} href="https://www.gatsbyjs.org">
+        <Styled.a
+          sx={{ color: "primary", ml: 1 }}
+          href="https://www.gatsbyjs.org"
+        >
           Gatsby
-        </a>
+        </Styled.a>
       </Footer>
-    </Fragment>
+    </Styled.root>
   )
 }
 

@@ -7,13 +7,18 @@ const heading = {
 }
 
 export default {
-  // mdx
+  // Mdx + Styled.key
+  root: {
+    fontFamily: "body",
+    lineHeight: "body",
+    fontWeight: "body",
+    fontSize: 3,
+  },
   h1: {
     ...heading,
     color: "text",
     fontSize: 40,
-    mt: 4,
-    mb: 2,
+    my: 4,
   },
   h2: {
     ...heading,
@@ -34,6 +39,12 @@ export default {
   h6: {
     ...heading,
     fontSize: 0,
+  },
+  a: {
+    color: "primary",
+    "&:hover": {
+      color: "accent",
+    },
   },
   pre: {
     fontFamily: "monospace",

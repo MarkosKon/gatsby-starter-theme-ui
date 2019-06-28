@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Styled } from "theme-ui"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
+    <Styled.h1>Hi people</Styled.h1>
     <p>
       Welcome to your new, <strong>strong Gatsby site.</strong>
     </p>
@@ -22,7 +22,10 @@ const IndexPage = () => (
       mollitia numquam, tempora perferendis fuga? Quaerat, incidunt! Molestiae a
       aperiam laborum consequuntur?
     </p>
-    <Link sx={{ color: "primary" }} to="/page-2/">
+    <Link
+      sx={{ color: "primary", "&:hover": { color: "accent" } }}
+      to="/page-2/"
+    >
       Go to page 2
     </Link>
   </Layout>

@@ -17,32 +17,19 @@ export const wrapRootElement = ({ element }) => (
           * {
             box-sizing: border-box;
           }
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6 {
-            font-family: "Oswald", sans-serif;
-          }
-          body {
-            font-family: "Lora", sans-serif;
-            font-size: 20px;
-            line-height: 1.45;
-          }
           body.light {
             --text: #000;
             --background: #fff;
             --primary: rebeccapurple;
-            --secondary: #F7B2B7;
+            --secondary: #f7b2b7;
             --accent: orangered;
             --mute: lightgray;
           }
           body.dark {
             --text: #fff;
             --background: #101010;
-            --primary: #59AB6D;
-            --secondary: #59AB6D;
+            --primary: #59ab6d;
+            --secondary: #59ab6d;
             --accent: #00b7ff;
             --mute: darkgray;
           }

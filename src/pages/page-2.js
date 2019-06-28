@@ -11,7 +11,9 @@ const SecondPage = () => (
     <Styled.h1>Hi from the second page</Styled.h1>
     <div sx={{ variant: "textStyles.heading" }}>Something like a heading.</div>
     <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/" sx={{ color: "primary", "&:hover": { color: "accent" } }}>
+      Go back to the homepage
+    </Link>
   </Layout>
 )
 
