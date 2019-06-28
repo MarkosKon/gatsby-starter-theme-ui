@@ -2,8 +2,8 @@
 import { Styled, jsx } from "theme-ui"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const SecondPage = () => (
   <Layout>
