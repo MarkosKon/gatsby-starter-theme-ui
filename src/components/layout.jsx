@@ -10,6 +10,7 @@ import {
 } from "theme-ui";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
+import Button from "./Button";
 
 import Header from "./Header";
 
@@ -29,15 +30,8 @@ const Layout = ({ children }) => {
     <Styled.root>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Box sx={{ py: 3, px: [2, 3], textAlign: "right" }}>
-        <button
-          type="button"
-          sx={{
-            bg: "secondary",
-            color: "text",
-            border: 0,
-            px: 3,
-            py: 2
-          }}
+        <Button
+          sx={{ borderRadius: "2px" }}
           onClick={() => {
             document.body.classList.remove(colorMode);
             document.body.classList.add(newColorMode);
@@ -45,7 +39,7 @@ const Layout = ({ children }) => {
           }}
         >
           {`Toggle ${newColorMode}`}
-        </button>
+        </Button>
       </Box>
       <Main sx={{ minHeight: "76vh" }}>
         <Container>{children}</Container>
