@@ -1,20 +1,20 @@
 /** @jsx jsx */
-import { jsx, Box } from "theme-ui"
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import { jsx, Box } from "theme-ui";
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
 const Header = ({ siteTitle }) => (
   <header
     sx={{
       backgroundColor: "primary",
-      color: "background",
+      color: "background"
     }}
   >
     <Box
       sx={{
         m: "0 auto",
         p: "1.45rem 1.0875rem",
-        maxWidth: "960px",
+        maxWidth: "960px"
       }}
     >
       <Link
@@ -24,21 +24,21 @@ const Header = ({ siteTitle }) => (
           fontWeight: "heading",
           fontSize: 40,
           color: "background",
-          textDecoration: "none",
+          textDecoration: "none"
         }}
       >
         {siteTitle}
       </Link>
     </Box>
   </header>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: ``
+};
 
-export default Header
+export default Header;

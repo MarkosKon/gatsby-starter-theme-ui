@@ -1,12 +1,12 @@
-import React from "react"
-import { ThemeProvider, ColorMode } from "theme-ui"
-import { Global, css } from "@emotion/core"
+import React from "react";
+import { ThemeProvider, ColorMode } from "theme-ui";
+import { Global, css } from "@emotion/core";
 
-import theme from "./theme"
+import theme from "./theme";
 
-import "typeface-oswald"
-import "typeface-lora"
-import "normalize.css"
+import "typeface-oswald";
+import "typeface-lora";
+import "normalize.css";
 
 // eslint-disable-next-line react/prop-types
 export const wrapRootElement = ({ element }) => (
@@ -39,4 +39,4 @@ export const wrapRootElement = ({ element }) => (
       {element}
     </>
   </ThemeProvider>
-)
+);

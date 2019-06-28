@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { Styled, jsx } from "theme-ui"
-import { Link } from "gatsby"
+import { Styled, jsx } from "theme-ui";
+import { Link } from "gatsby";
 
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const SecondPage = () => (
   <Layout>
@@ -15,6 +15,6 @@ const SecondPage = () => (
       Go back to the homepage
     </Link>
   </Layout>
-)
+);
 
-export default SecondPage
+export default SecondPage;

@@ -3,8 +3,8 @@
 const heading = {
   fontFamily: "heading",
   lineHeight: "heading",
-  fontWeight: "heading",
-}
+  fontWeight: "heading"
+};
 
 export default {
   // Mdx + Styled.key
@@ -12,66 +12,66 @@ export default {
     fontFamily: "body",
     lineHeight: "body",
     fontWeight: "body",
-    fontSize: 3,
+    fontSize: 3
   },
   h1: {
     ...heading,
     color: "text",
     fontSize: 40,
-    my: 4,
+    my: 4
   },
   h2: {
     ...heading,
-    fontSize: 4,
+    fontSize: 4
   },
   h3: {
     ...heading,
-    fontSize: 3,
+    fontSize: 3
   },
   h4: {
     ...heading,
-    fontSize: 2,
+    fontSize: 2
   },
   h5: {
     ...heading,
-    fontSize: 1,
+    fontSize: 1
   },
   h6: {
     ...heading,
-    fontSize: 0,
+    fontSize: 0
   },
   a: {
     color: "primary",
     "&:hover": {
-      color: "accent",
-    },
+      color: "accent"
+    }
   },
   pre: {
     fontFamily: "monospace",
     overflowX: "auto",
     code: {
-      color: "inherit",
-    },
+      color: "inherit"
+    }
   },
   code: {
     fontFamily: "monospace",
-    fontSize: "inherit",
+    fontSize: "inherit"
   },
   table: {
     width: "100%",
     borderCollapse: "separate",
-    borderSpacing: 0,
+    borderSpacing: 0
   },
   th: {
     textAlign: "left",
-    borderBottomStyle: "solid",
+    borderBottomStyle: "solid"
   },
   td: {
     textAlign: "left",
-    borderBottomStyle: "solid",
-  },
+    borderBottomStyle: "solid"
+  }
   //   theme-ui components
   //   Container: {
   //     maxWidth: 768,
   //   },
-}
+};

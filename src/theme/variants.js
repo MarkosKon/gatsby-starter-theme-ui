@@ -2,11 +2,11 @@ export const textStyles = {
   heading: {
     fontFamily: "heading",
     lineHeight: "heading",
-    fontWeight: "heading",
+    fontWeight: "heading"
     // fontSize: [3,4]
   },
   caps: {
     textTransform: "uppercase",
-    letterSpacing: "0.1em",
-  },
-}
+    letterSpacing: "0.1em"
+  }
+};

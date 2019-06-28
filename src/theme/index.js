@@ -1,7 +1,7 @@
-import colors from "./colors"
-import fonts from "./fonts"
-import styles from "./styles"
-import { textStyles } from "./variants"
+import colors from "./colors";
+import fonts from "./fonts";
+import styles from "./styles";
+import { textStyles } from "./variants";
 
 export default {
   fonts,
@@ -11,17 +11,17 @@ export default {
   fontWeights: {
     body: 400,
     heading: 700,
-    bold: 700,
+    bold: 700
   },
   lineHeights: {
     body: 1.45,
-    heading: 1.125,
+    heading: 1.125
   },
   letterSpacings: {
     body: "normal",
-    caps: "0.2em",
+    caps: "0.2em"
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   styles,
-  textStyles,
-}
+  textStyles
+};

@@ -6,12 +6,12 @@ import {
   Container,
   Footer,
   useColorMode,
-  Styled,
-} from "theme-ui"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+  Styled
+} from "theme-ui";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./Header"
+import Header from "./Header";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,9 +22,9 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
-  const [colorMode, setColorMode] = useColorMode()
-  const newColorMode = colorMode === "light" ? "dark" : "light"
+  `);
+  const [colorMode, setColorMode] = useColorMode();
+  const newColorMode = colorMode === "light" ? "dark" : "light";
   return (
     <Styled.root>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -36,12 +36,12 @@ const Layout = ({ children }) => {
             color: "text",
             border: 0,
             px: 3,
-            py: 2,
+            py: 2
           }}
           onClick={() => {
-            document.body.classList.remove(colorMode)
-            document.body.classList.add(newColorMode)
-            setColorMode(newColorMode)
+            document.body.classList.remove(colorMode);
+            document.body.classList.add(newColorMode);
+            setColorMode(newColorMode);
           }}
         >
           {`Toggle ${newColorMode}`}
@@ -60,11 +60,11 @@ const Layout = ({ children }) => {
         </Styled.a>
       </Footer>
     </Styled.root>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;
