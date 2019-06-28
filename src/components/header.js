@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 
 const Header = ({ siteTitle }) => (
   <header
-    className="color-transition"
     sx={{
       backgroundColor: "primary",
       color: "background",

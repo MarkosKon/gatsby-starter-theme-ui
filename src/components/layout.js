@@ -23,7 +23,6 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <Box sx={{ py: 3, px: [2, 3], textAlign: "right" }}>
         <button
-          className="color-transition"
           sx={{
             bg: "secondary",
             color: "text",
@@ -43,7 +42,7 @@ const Layout = ({ children }) => {
       <Main sx={{ minHeight: "76vh" }}>
         <Container>{children}</Container>
       </Main>
-      <Footer sx={{ bg: "mute", p: 4 }}>
+      <Footer sx={{ p: 4 }}>
         {`© ${new Date().getFullYear()}, Built with`}
         <a sx={{ color: "primary", ml: 1 }} href="https://www.gatsbyjs.org">
           Gatsby

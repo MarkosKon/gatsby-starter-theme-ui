@@ -34,16 +34,16 @@ export const wrapRootElement = ({ element }) => (
             --text: #000;
             --background: #fff;
             --primary: rebeccapurple;
-            --secondary: orangered;
-            --accent: pink;
+            --secondary: #F7B2B7;
+            --accent: orangered;
             --mute: lightgray;
           }
           body.dark {
             --text: #fff;
-            --background: #000;
-            --primary: #9a2463;
-            --secondary: orangered;
-            --accent: pink;
+            --background: #101010;
+            --primary: #59AB6D;
+            --secondary: #59AB6D;
+            --accent: #00b7ff;
             --mute: darkgray;
           }
         `}
