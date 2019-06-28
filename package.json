@@ -25,7 +25,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "theme-ui": "^0.2.0",
-    "typeface-open-sans": "^0.0.54",
+    "typeface-lora": "^0.0.72",
     "typeface-oswald": "^0.0.54"
   },
   "devDependencies": {
