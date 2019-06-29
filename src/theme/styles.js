@@ -16,13 +16,12 @@ export default {
   },
   h1: {
     ...heading,
-    color: "text",
     fontSize: 40,
     my: 4
   },
   h2: {
     ...heading,
-    fontSize: 4
+    fontSize: 5
   },
   h3: {
     ...heading,

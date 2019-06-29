@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui";
-import { Link } from "gatsby";
+import Link from "../components/Link";
 
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
@@ -22,12 +22,7 @@ const IndexPage = () => (
       mollitia numquam, tempora perferendis fuga? Quaerat, incidunt! Molestiae a
       aperiam laborum consequuntur?
     </p>
-    <Link
-      sx={{ color: "primary", "&:hover": { color: "accent" } }}
-      to="/page-2/"
-    >
-      Go to page 2
-    </Link>
+    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
 
