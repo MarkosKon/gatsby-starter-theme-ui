@@ -69,6 +69,12 @@ export default {
     textAlign: "left",
     borderBottomStyle: "solid"
   }
+  // ul: {
+
+  // },
+  // li: {
+
+  // }
   //   theme-ui components
   //   Container: {
   //     maxWidth: 768,

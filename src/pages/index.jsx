@@ -22,7 +22,27 @@ const IndexPage = () => (
       mollitia numquam, tempora perferendis fuga? Quaerat, incidunt! Molestiae a
       aperiam laborum consequuntur?
     </p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Styled.h2>Example pages</Styled.h2>
+    <Styled.ul>
+      <Styled.li>
+        <Link to="/slider/">Slider</Link>
+      </Styled.li>
+      <Styled.li>
+        <Link to="/aos/">Animation on scroll</Link>
+      </Styled.li>
+      <Styled.li>
+        <Link to="/bgimage/">Background image</Link>
+      </Styled.li>
+      <Styled.li>
+        <Link to="/icons/">FontAwesome Icons</Link>
+      </Styled.li>
+      <Styled.li>
+        <Link to="/parallax/">Parallax</Link>
+      </Styled.li>
+      <Styled.li>
+        <Link to="/page-2/">Go to page 2</Link>
+      </Styled.li>
+    </Styled.ul>
   </Layout>
 );
 
