@@ -11,6 +11,7 @@ import {
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Button from "./Button";
+import SkipLink from "./SkipLink";
 
 import Header from "./Header";
 
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
   const newColorMode = colorMode === "light" ? "dark" : "light";
   return (
     <Styled.root>
+      <SkipLink>Skip to content</SkipLink>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Box sx={{ py: 3, px: [2, 3], textAlign: "right" }}>
         <Button
@@ -42,7 +44,7 @@ const Layout = ({ children }) => {
         </Button>
       </Box>
       <Main sx={{ minHeight: "76vh" }}>
-        <Container>{children}</Container>
+        <Container id="content">{children}</Container>
       </Main>
       <Footer sx={{ p: 4 }}>
         {`© ${new Date().getFullYear()}, Built with`}
