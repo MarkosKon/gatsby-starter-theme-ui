@@ -42,6 +42,9 @@ const IndexPage = () => (
       <Styled.li>
         <Link to="/page-2/">Go to page 2</Link>
       </Styled.li>
+      <Styled.li>
+        <Link to="/sss/">Non existent</Link>
+      </Styled.li>
     </Styled.ul>
   </Layout>
 );

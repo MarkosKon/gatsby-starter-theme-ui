@@ -46,8 +46,12 @@ export default {
     }
   },
   pre: {
+    variant: "prism",
     fontFamily: "monospace",
+    fontSize: 2,
     overflowX: "auto",
+    p: 3,
+    bg: "mute",
     code: {
       color: "inherit"
     }
