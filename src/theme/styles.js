@@ -58,7 +58,8 @@ export default {
   },
   code: {
     fontFamily: "monospace",
-    fontSize: "inherit"
+    fontSize: "inherit",
+    bg: "mute"
   },
   table: {
     width: "100%",
@@ -67,11 +68,17 @@ export default {
   },
   th: {
     textAlign: "left",
-    borderBottomStyle: "solid"
+    padding: 1,
+    borderBottomStyle: "solid",
+    borderBottomWidth: "2px",
+    borderBottomColor: "rgb(246, 246, 246)"
   },
   td: {
     textAlign: "left",
-    borderBottomStyle: "solid"
+    padding: 1,
+    borderBottomStyle: "solid",
+    borderBottomWidth: "1px",
+    borderBottomColor: "rgb(246, 246, 246)"
   }
   // ul: {
 

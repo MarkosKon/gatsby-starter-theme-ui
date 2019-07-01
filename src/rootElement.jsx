@@ -22,9 +22,10 @@ export const wrapRootElement = ({ element }) => (
             --text: #000;
             --background: #fff;
             --primary: rebeccapurple;
-            --secondary: #f7b2b7;
+            --secondary: #e75480;
             --accent: orangered;
             --mute: #f6f6f6;
+            --highlight-code: #ff450030;
           }
           body.dark {
             --text: #fff;
@@ -33,6 +34,19 @@ export const wrapRootElement = ({ element }) => (
             --secondary: #59ab6d;
             --accent: #00b7ff;
             --mute: rgba(0, 0, 0, 0.5);
+            --highlight-code: #00b7ff1f;
+          }
+
+          .gatsby-highlight {
+            border-radius: 0.3em;
+            margin: 1.45em 0;
+            overflow: auto;
+          }
+          .gatsby-highlight pre[class*="language-"] {
+            margin: 0;
+            overflow: initial;
+            float: left;
+            min-width: 100%;
           }
         `}
       />
